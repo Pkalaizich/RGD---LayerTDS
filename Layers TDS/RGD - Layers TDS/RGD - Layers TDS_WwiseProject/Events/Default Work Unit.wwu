@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{13AE9692-9A13-4B56-ABBB-26931736E571}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{13AE9692-9A13-4B56-ABBB-26931736E571}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="disparo" ID="{105B52CF-20FC-4AC6-8881-1336BA962570}">
+					<ChildrenList>
+						<Action Name="" ID="{31C13313-2641-4DCE-9A41-B5FEAB4C0A20}" ShortID="273037360">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="disparo" ID="{8B4CD10A-EC29-42B2-8215-4764EA865F45}" WorkUnitID="{F99FF9A6-22FB-417D-B70D-B455A5B431A1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="impacto_disparo" ID="{E05839D5-45E8-4915-8575-9A53A3842041}">
+					<ChildrenList>
+						<Action Name="" ID="{A4C41C7C-0A86-433F-BF95-E4FC94F7506C}" ShortID="841490382">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="laserhit" ID="{4BDC4D9D-73D3-4ECC-A0EE-594919C883C8}" WorkUnitID="{F99FF9A6-22FB-417D-B70D-B455A5B431A1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

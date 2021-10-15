@@ -1,0 +1,9 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3067999715	disparo			\Default Work Unit\disparo	
+	4206405159	impacto_disparo			\Default Work Unit\impacto_disparo	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	51421165	laser	E:\RGD---LayerTDS\Layers TDS\RGD - Layers TDS\RGD - Layers TDS_WwiseProject\.cache\Windows\SFX\laser_DCEA4377.wem		\Actor-Mixer Hierarchy\Default Work Unit\disparo\laser		92700
+	414833137	PistolGliss	E:\RGD---LayerTDS\Layers TDS\RGD - Layers TDS\RGD - Layers TDS_WwiseProject\.cache\Windows\SFX\PistolGliss_84B2D2EA.wem		\Actor-Mixer Hierarchy\Default Work Unit\disparo\PistolGliss		59764
+	628527197	laserhit	E:\RGD---LayerTDS\Layers TDS\RGD - Layers TDS\RGD - Layers TDS_WwiseProject\.cache\Windows\SFX\laserhit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\laserhit		195652
+

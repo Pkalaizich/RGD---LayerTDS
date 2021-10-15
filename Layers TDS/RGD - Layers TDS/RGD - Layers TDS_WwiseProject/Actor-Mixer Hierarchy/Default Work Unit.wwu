@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F99FF9A6-22FB-417D-B70D-B455A5B431A1}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{F99FF9A6-22FB-417D-B70D-B455A5B431A1}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="laserhit" ID="{4BDC4D9D-73D3-4ECC-A0EE-594919C883C8}" ShortID="388935600">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{F9F1F61A-9F56-4FAC-9AFA-B58BE0324069}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="500"/>
+											<Property Name="Min" Type="Real64" Value="-500"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4FA4170E-E525-4A41-AD91-85B1C5CB9665}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5F51A88-EEDF-46E1-992F-056E0BD90387}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="laserhit" ID="{B3A4F4E4-4D19-4C9C-A601-F5E285067E31}">
+							<Language>SFX</Language>
+							<AudioFile>laserhit.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="628527197"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="laserhit" ID="{B3A4F4E4-4D19-4C9C-A601-F5E285067E31}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<BlendContainer Name="disparo" ID="{8B4CD10A-EC29-42B2-8215-4764EA865F45}" ShortID="574147621">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{4A576022-8483-46B2-97B1-1574B3866FA1}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="500"/>
+											<Property Name="Min" Type="Real64" Value="-500"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4FA4170E-E525-4A41-AD91-85B1C5CB9665}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5F51A88-EEDF-46E1-992F-056E0BD90387}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="laser" ID="{34B642D2-97DF-4464-ACBD-2467B53DDDFB}" ShortID="646135536">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4FA4170E-E525-4A41-AD91-85B1C5CB9665}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5F51A88-EEDF-46E1-992F-056E0BD90387}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="laser" ID="{50F58A91-E636-403A-9BC1-963A47C27A7D}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.00681087277723393"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.396797674961081"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0451719801853728"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.570316767731375"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>laser.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="51421165"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="laser" ID="{50F58A91-E636-403A-9BC1-963A47C27A7D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PistolGliss" ID="{3C619154-E9E6-43FF-8DBC-FB8627E1BECF}" ShortID="591911227">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4FA4170E-E525-4A41-AD91-85B1C5CB9665}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5F51A88-EEDF-46E1-992F-056E0BD90387}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PistolGliss" ID="{EE042A57-07F6-4DE1-9ABC-736489260982}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.226527225901398"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.310940673289183"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>PistolGliss.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="414833137"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="PistolGliss" ID="{EE042A57-07F6-4DE1-9ABC-736489260982}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</BlendContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

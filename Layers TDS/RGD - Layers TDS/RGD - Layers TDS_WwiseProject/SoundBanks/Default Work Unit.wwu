@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0582CE9E-A52A-4AB1-95A0-64D280E499C9}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{0582CE9E-A52A-4AB1-95A0-64D280E499C9}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{D0F9F42D-5CFF-4418-A33F-70A79DAEEF63}">
+					<ObjectInclusionList>
+						<ObjectRef Name="impacto_disparo" ID="{E05839D5-45E8-4915-8575-9A53A3842041}" WorkUnitID="{13AE9692-9A13-4B56-ABBB-26931736E571}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="disparo" ID="{105B52CF-20FC-4AC6-8881-1336BA962570}" WorkUnitID="{13AE9692-9A13-4B56-ABBB-26931736E571}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>
