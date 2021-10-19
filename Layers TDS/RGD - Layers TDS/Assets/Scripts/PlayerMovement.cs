@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : Life
 {
     public float moveSpeed = 5f;
     
@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     Vector2 mousePos;
 
     public Camera cam;
+    
 
     
     void Update()
@@ -30,4 +31,5 @@ public class PlayerMovement : MonoBehaviour
         float angle = Mathf.Atan2(loodDir.y, loodDir.x) * Mathf.Rad2Deg - 90f;
         rb.rotation = angle;
     }
+    
 }
