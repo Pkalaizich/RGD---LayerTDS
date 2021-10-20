@@ -6,10 +6,11 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     
-    public Rigidbody2D rb;
+    public Rigidbody rb;
 
-    Vector2 movement;
-    Vector2 mousePos;
+    Vector3 movement;
+    Vector3 mousePos;
+    //Vector3 objPos;
 
     public Camera cam;
 
@@ -18,7 +19,8 @@ public class PlayerMovement : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-
+        mousePos.z = 0;
+        //Vector3 objPos = cam.ScreenToWorldPoint(Input.mousePosition);
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
 
     }
@@ -26,8 +28,10 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.deltaTime);
-        Vector2 loodDir = mousePos - rb.position;
+        Vector3 aux = new Vector3(rb.position.x, rb.position.y, 0);
+        Vector3 loodDir = mousePos - aux;
         float angle = Mathf.Atan2(loodDir.y, loodDir.x) * Mathf.Rad2Deg - 90f;
-        rb.rotation = angle;
+        transform.rotation = Quaternion.Euler(0, 0, angle);
+        //rb.MoveRotation
     }
 }
