@@ -7,11 +7,12 @@ public class Bullet : MonoBehaviour
     public GameObject hitEffect;
     public AudioClip hittingSound;
     public AudioSource source;
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter(Collision collision)
     {
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-        source.PlayOneShot(hittingSound);
+        //source.PlayOneShot(hittingSound);
         Destroy(effect, 2f);
-        Destroy(gameObject, 0.1f);
+        Destroy(gameObject);
     }
+    
 }

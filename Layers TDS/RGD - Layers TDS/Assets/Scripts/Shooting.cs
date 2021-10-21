@@ -28,8 +28,8 @@ public class Shooting : MonoBehaviour
     void Shoot()
     {
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+        Rigidbody rb = bullet.GetComponent<Rigidbody>();
+        rb.AddForce(firePoint.up * bulletForce, ForceMode.Impulse);
         //source.PlayOneShot(shootingSound);
         AkSoundEngine.PostEvent("disparo", gameObject);
     }
