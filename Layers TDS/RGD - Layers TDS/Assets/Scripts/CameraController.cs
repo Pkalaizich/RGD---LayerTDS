@@ -14,21 +14,15 @@ public class CameraController : MonoBehaviour
         {            
             if (normalCamera)
             {
-                CharacterController cc = Player.GetComponent<CharacterController>();
-                cc.enabled = false;
                 anim.Play("SpiritualWorldCamera");
                 previousLocation = Player.transform.position;
                 Player.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y, Player.transform.position.z + 15);
-                cc.enabled = true;
             }
             else
             {
-                CharacterController cc = Player.GetComponent<CharacterController>();
-                cc.enabled = false;
                 Player.transform.position = previousLocation;
                 //Player.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y, Player.transform.position.z - 15);
                 anim.Play("NormalWorldCamera");
-                cc.enabled = true;
             }
             normalCamera = !normalCamera;
         }
