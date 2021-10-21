@@ -9,7 +9,7 @@ public class CameraController : MonoBehaviour
     public GameObject Player;
     private Vector3 previousLocation;
     public float distanceBeetweenPlanes = 5;
-    public GameObject dot;
+    //public GameObject dot;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -22,7 +22,7 @@ public class CameraController : MonoBehaviour
                 previousLocation = Player.transform.position;
                 Player.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y, Player.transform.position.z + distanceBeetweenPlanes);
                 cc.enabled = true;
-                dot.SetActive(false);
+                //dot.SetActive(false);
             }
             else
             {
@@ -32,7 +32,7 @@ public class CameraController : MonoBehaviour
                 //Player.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y, Player.transform.position.z - 15);
                 //anim.Play("NormalWorldCamera");
                 cc.enabled = true;
-                dot.SetActive(true);
+                //dot.SetActive(true);
             }
             normalCamera = !normalCamera;
         }
