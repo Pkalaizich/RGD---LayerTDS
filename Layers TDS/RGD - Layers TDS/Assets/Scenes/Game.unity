@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2067,9 +2067,8 @@ GameObject:
   - component: {fileID: 1276241697}
   - component: {fileID: 1276241701}
   - component: {fileID: 1276241702}
-  - component: {fileID: 1276241698}
   - component: {fileID: 1276241703}
-  - component: {fileID: 1276241704}
+  - component: {fileID: 1276241698}
   m_Layer: 0
   m_Name: IsTrian
   m_TagString: Untagged
@@ -2084,30 +2083,32 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276241696}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe2dce80fb7a17046868c2806c5c6d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 9
-  rb: {fileID: 1276241698}
+  rb: {fileID: 0}
   cam: {fileID: 963194227}
---- !u!54 &1276241698
-Rigidbody:
+--- !u!143 &1276241698
+CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276241696}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 72
-  m_CollisionDetection: 1
+  m_Height: 1.024
+  m_Radius: 0.512
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &1276241699
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2287,32 +2288,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!65 &1276241703
-BoxCollider:
+--- !u!114 &1276241703
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276241696}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1.024, y: 0.88, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!135 &1276241704
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1276241696}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.48
-  m_Center: {x: 0, y: -0.03, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f0288c1605002045b8200747379a1fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 9
+  cc: {fileID: 1276241698}
+  cam: {fileID: 963194227}
 --- !u!1 &1277897135
 GameObject:
   m_ObjectHideFlags: 0
