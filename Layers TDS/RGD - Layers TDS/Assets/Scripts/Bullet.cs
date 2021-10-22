@@ -13,6 +13,11 @@ public class Bullet : MonoBehaviour
         //source.PlayOneShot(hittingSound);
         Destroy(effect, 2f);
         Destroy(gameObject);
+        Life life = collision.gameObject.GetComponent<Life>();
+        if (life!=null)
+        {
+            life.damage(5);
+        }
     }
     
 }
