@@ -35,6 +35,7 @@ public class CameraController : MonoBehaviour
                 //dot.SetActive(true);
             }
             normalCamera = !normalCamera;
+            ControllerMovement.Instance.normalPlane = !ControllerMovement.Instance.normalPlane;
         }
     }
 }

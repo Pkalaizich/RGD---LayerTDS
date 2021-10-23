@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     private float bulletTimer;
     public float bulletForce = 20f;
     public Transform firePoint;
+    public bool isNormalPlane = true;
 
     private void Awake()
     {
@@ -18,13 +19,17 @@ public class Enemy : MonoBehaviour
     }
     private void Update()
     {
-        float angle = Mathf.Atan2(Player.transform.position.y - this.transform.position.y, Player.transform.position.x - this.transform.position.x) * Mathf.Rad2Deg - 90f;
-        transform.rotation = Quaternion.Euler(0, 0, angle);
+        if (ControllerMovement.Instance.normalPlane ==true)
+        {
+            float angle = Mathf.Atan2(Player.transform.position.y - this.transform.position.y, Player.transform.position.x - this.transform.position.x) * Mathf.Rad2Deg - 90f;
+            transform.rotation = Quaternion.Euler(0, 0, angle);
+        }
+        
     }
     private void FixedUpdate()
     {
-        bulletTimer -= Time.deltaTime;
-        if (bulletTimer<=0)
+        bulletTimer = Mathf.Clamp(bulletTimer-Time.deltaTime,0, 1 / bulletsPerSecond);
+        if (bulletTimer<=0&&ControllerMovement.Instance.normalPlane==isNormalPlane)
         {
             Shoot();
         }

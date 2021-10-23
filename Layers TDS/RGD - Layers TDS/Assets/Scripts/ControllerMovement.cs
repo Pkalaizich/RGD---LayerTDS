@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ControllerMovement : MonoBehaviour
 {
+    private static ControllerMovement instance;
+    public static ControllerMovement Instance { get => instance; }
+
     public float moveSpeed = 5f;
 
     public CharacterController cc;
@@ -11,9 +14,16 @@ public class ControllerMovement : MonoBehaviour
     Vector3 movement;
     Vector3 mousePos;
     //Vector3 objPos;
+    public bool normalPlane = true;
 
     public Camera cam;
-
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(this);
+    }
 
     void Update()
     {
