@@ -18,6 +18,11 @@ public class Bullet : MonoBehaviour
         {
             life.damage(5);
         }
+        if (collision.gameObject.tag =="DoorTrigger")
+        {
+            DoorTrigger dt = collision.gameObject.GetComponent<DoorTrigger>();
+            dt.takeDamage();
+        }
     }
     
 }
