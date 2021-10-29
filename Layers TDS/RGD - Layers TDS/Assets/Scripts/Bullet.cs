@@ -33,6 +33,11 @@ public class Bullet : MonoBehaviour
             Ring rg = collision.gameObject.GetComponent<Ring>();
             rg.destroyRing();
         }
+        if (collision.gameObject.tag == "ShieldTrigger")
+        {
+            ShieldTrigger st = collision.gameObject.GetComponent<ShieldTrigger>();
+            st.takeDamage();
+        }
     }
     
 }
