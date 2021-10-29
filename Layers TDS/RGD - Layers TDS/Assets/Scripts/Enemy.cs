@@ -34,7 +34,7 @@ public class Enemy : MonoBehaviour
     }
     private void Update()
     {
-        if (ControllerMovement.Instance.normalPlane ==true)
+        if (ControllerMovement.Instance.normalPlane ==isNormalPlane)
         {
             distance = Mathf.Abs(Vector3.Distance(Player.transform.position, this.transform.position));
             if (distance<=searchRadius)
