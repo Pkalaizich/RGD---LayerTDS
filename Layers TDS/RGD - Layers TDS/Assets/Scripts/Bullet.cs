@@ -28,6 +28,11 @@ public class Bullet : MonoBehaviour
             Dummy dm = collision.gameObject.GetComponent<Dummy>();
             dm.takeDamage();
         }
+        if (collision.gameObject.tag =="Ring")
+        {
+            Ring rg = collision.gameObject.GetComponent<Ring>();
+            rg.destroyRing();
+        }
     }
     
 }

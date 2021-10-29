@@ -9,7 +9,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4854910200309537480, guid: 72079bba70fdc584a9ec514f87e764e8, type: 3}
       propertyPath: m_Name
-      value: RedBullet
+      value: RedBullet Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4854910200309537480, guid: 72079bba70fdc584a9ec514f87e764e8, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5732260964294893402, guid: 72079bba70fdc584a9ec514f87e764e8, type: 3}
       propertyPath: m_Color.b
