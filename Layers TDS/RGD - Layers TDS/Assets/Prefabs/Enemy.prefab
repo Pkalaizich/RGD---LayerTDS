@@ -214,6 +214,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
+  maxLife: 10
+  hb: {fileID: 0}
 --- !u!114 &5393752742626523614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,8 +230,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   Player: {fileID: 0}
+  Dummy: {fileID: 0}
+  Target: {fileID: 0}
   bulletPrefab: {fileID: 6346443342467429151, guid: 92500c6afde039b43b5406d410094ffd, type: 3}
-  bulletsPerSecond: 1.2
+  bulletsPerSecond: 0.75
   bulletForce: 20
   firePoint: {fileID: 5393752743058895297}
   isNormalPlane: 1
