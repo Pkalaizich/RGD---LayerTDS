@@ -6,6 +6,8 @@ public class Enemy : MonoBehaviour
 {
     public float moveSpeed=5f;
     public GameObject Player;
+    public GameObject Dummy;
+    public GameObject Target;
     public GameObject bulletPrefab;
     public float bulletsPerSecond=1;
     private float bulletTimer;
@@ -29,19 +31,28 @@ public class Enemy : MonoBehaviour
     }
     private void Awake()
     {
+        Target = Player;
         bulletTimer = 1 / bulletsPerSecond;
         enemyCC = GetComponent<CharacterController>();
     }
     private void Update()
     {
+        if (ControllerMovement.Instance.normalPlane == false && isNormalPlane==true)
+        {
+            Target = Dummy;
+        }
+        else
+        {
+            Target = Player;
+        }
         if(GameController.Instance.gameStart ==true)
         {
-            if (ControllerMovement.Instance.normalPlane == isNormalPlane)
+            if (ControllerMovement.Instance.normalPlane == isNormalPlane||Target==Dummy)
             {
-                distance = Mathf.Abs(Vector3.Distance(Player.transform.position, this.transform.position));
+                distance = Mathf.Abs(Vector3.Distance(Target.transform.position, this.transform.position));
                 if (distance <= searchRadius)
                 {
-                    float angle = Mathf.Atan2(Player.transform.position.y - this.transform.position.y, Player.transform.position.x - this.transform.position.x) * Mathf.Rad2Deg - 90f;
+                    float angle = Mathf.Atan2(Target.transform.position.y - this.transform.position.y, Target.transform.position.x - this.transform.position.x) * Mathf.Rad2Deg - 90f;
                     transform.rotation = Quaternion.Euler(0, 0, angle);
                 }
 
@@ -54,12 +65,12 @@ public class Enemy : MonoBehaviour
         if (GameController.Instance.gameStart==true)
         {
             bulletTimer = Mathf.Clamp(bulletTimer - Time.deltaTime, 0, 1 / bulletsPerSecond);
-            if (bulletTimer <= 0 && ControllerMovement.Instance.normalPlane == isNormalPlane && distance <= shootRadius)
+            if (bulletTimer <= 0 && (ControllerMovement.Instance.normalPlane||Target==Dummy) == isNormalPlane && distance <= shootRadius)
             {
                 Shoot();
             }
-            Vector3 dir = Vector3.Normalize(Player.transform.position - transform.position);
-            if (distance >= stopRadius && distance <= searchRadius && ControllerMovement.Instance.normalPlane == isNormalPlane)
+            Vector3 dir = Vector3.Normalize(Target.transform.position - transform.position);
+            if (distance >= stopRadius && distance <= searchRadius && (ControllerMovement.Instance.normalPlane == isNormalPlane||Target==Dummy))
             {
                 enemyCC.Move(dir * moveSpeed * Time.deltaTime);
             }

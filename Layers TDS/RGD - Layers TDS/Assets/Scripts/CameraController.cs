@@ -12,6 +12,7 @@ public class CameraController : MonoBehaviour
     public GameObject normalBackground;
     private Collider box;
     public float newAlpha = 0.5f;
+    public GameObject Dummy;
     //private SpriteRenderer sr;
 
     private void Awake()
@@ -31,7 +32,10 @@ public class CameraController : MonoBehaviour
                     cc.enabled = false;
                     //anim.Play("SpiritualWorldCamera");
                     previousLocation = Player.transform.position;
+                    Dummy.transform.position = Player.transform.position;
+                    Dummy.transform.rotation = Player.transform.rotation;
                     Player.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y, Player.transform.position.z + distanceBeetweenPlanes);
+                    Dummy.SetActive(true);
                     cc.enabled = true;
                     Color aux = Player.GetComponent<SpriteRenderer>().color;
                     aux.a = newAlpha;
@@ -42,6 +46,7 @@ public class CameraController : MonoBehaviour
                 {
                     CharacterController cc = Player.GetComponent<CharacterController>();
                     cc.enabled = false;
+                    Dummy.SetActive(false);
                     Player.transform.position = previousLocation;
                     //Player.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y, Player.transform.position.z - 15);
                     //anim.Play("NormalWorldCamera");
