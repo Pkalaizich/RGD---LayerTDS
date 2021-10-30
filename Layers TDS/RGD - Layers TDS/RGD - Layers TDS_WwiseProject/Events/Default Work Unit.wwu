@@ -59,15 +59,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{610EB188-F280-4EE4-B6C2-1A64E87831A2}" ShortID="843742114">
+						<Action Name="" ID="{62F8668F-3362-43C1-8BA0-179C8071779B}" ShortID="305149553">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
+								<Property Name="ActionType" Type="int16" Value="22"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="menu" ID="{1E0B054B-4FED-4D95-8BA6-F24083D2FF9A}" WorkUnitID="{D2E45C58-0798-41AA-A1BB-9E35E2654BCF}"/>
+									<ObjectRef Name="off" ID="{61241C21-4E25-4C04-92B1-30B0E678BB33}" WorkUnitID="{40B0C0DA-4566-415A-94BD-4FD7ABB93AD4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -125,6 +123,8 @@
 						<Action Name="" ID="{0D4E7997-0997-480D-A3F3-6C6A23B42D07}" ShortID="950313624">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -132,7 +132,20 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{47F5D1B5-470B-46AC-A4DB-07075071E323}" ShortID="469038285">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="on" ID="{BEF5F86D-32D2-47F7-9A7B-398E3472A0AE}" WorkUnitID="{40B0C0DA-4566-415A-94BD-4FD7ABB93AD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{18EFCCD9-90C1-4F27-BEDB-74125969BB63}" ShortID="935168947">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="menu" ID="{1E0B054B-4FED-4D95-8BA6-F24083D2FF9A}" WorkUnitID="{D2E45C58-0798-41AA-A1BB-9E35E2654BCF}"/>

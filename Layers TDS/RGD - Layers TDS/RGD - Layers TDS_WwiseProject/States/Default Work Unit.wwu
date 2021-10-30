@@ -10,6 +10,13 @@
 						<State Name="espiritual" ID="{7799AA57-AAC6-4A0B-AAAE-FC28159D5D94}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="menu" ID="{8134CB67-8246-4A80-81CD-2C8316BDA69C}">
+					<ChildrenList>
+						<State Name="None" ID="{ED5F0584-D756-4FEA-A821-730D15EEFE4A}"/>
+						<State Name="on" ID="{BEF5F86D-32D2-47F7-9A7B-398E3472A0AE}"/>
+						<State Name="off" ID="{61241C21-4E25-4C04-92B1-30B0E678BB33}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

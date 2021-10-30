@@ -36,6 +36,18 @@ namespace AK
             } // namespace STATE
         } // namespace LAYERS
 
+        namespace MENU
+        {
+            static const AkUniqueID GROUP = 2607556080U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace MENU
+
     } // namespace STATES
 
     namespace SWITCHES

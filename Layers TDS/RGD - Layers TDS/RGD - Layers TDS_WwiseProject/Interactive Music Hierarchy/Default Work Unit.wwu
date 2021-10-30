@@ -18,7 +18,7 @@
 					<ChildrenList>
 						<MusicSegment Name="mx_layers" ID="{41E53C5D-6B6D-49C1-910C-5BBE8F6AA885}" ShortID="660655511">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="54857.1428571429"/>
+								<Property Name="EndPosition" Type="Real64" Value="70299.9289267946"/>
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="140"/>
 							</PropertyList>
@@ -47,18 +47,18 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="MusicLoop_LAYERS_Stage1_Real2_140RPM_4-4" ID="{539F525A-EE95-41C6-9AEB-CBE87061DAD2}">
+										<AudioFileSource Name="MusicFinal_LAYERS_Stage1_Real_140RPM_4-4" ID="{94954DB4-27CD-4E8B-BF6A-28EDC7F6CE55}">
 											<Language>SFX</Language>
-											<AudioFile>MusicLoop_LAYERS_Stage1_Real2_140RPM_4-4.wav</AudioFile>
+											<AudioFile>MusicFinal_LAYERS_Stage1_Real_140RPM_4-4.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="828361230"/>
+												<MediaID ID="719442661"/>
 											</MediaIDList>
 										</AudioFileSource>
-										<AudioFileSource Name="MusicLoop_Layers_Stage1_Spiritual_140RPM_4-4" ID="{E1C76D86-7B17-41A7-BFE5-E8D0A57CC291}">
+										<AudioFileSource Name="MusicFinal_Layers_Stage1_Spiritual_140RPM_4-4" ID="{2BCC284A-32D8-4D0B-8542-DADA54F33D94}">
 											<Language>SFX</Language>
-											<AudioFile>MusicLoop_Layers_Stage1_Spiritual_140RPM_4-4.wav</AudioFile>
+											<AudioFile>MusicFinal_Layers_Stage1_Spiritual_140RPM_4-4.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="886066713"/>
+												<MediaID ID="185294462"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -108,13 +108,13 @@
 															<ObjectList Name="Clips">
 																<Reference>
 																	<Local>
-																		<MusicClip Name="MusicLoop_LAYERS_Stage1_Real2_140RPM_4-4" ID="{0F1258FB-226A-422C-9019-23C92EF58B62}">
+																		<MusicClip Name="MusicFinal_LAYERS_Stage1_Real_140RPM_4-4" ID="{477137F0-E384-4832-9C91-F9900FDBFCBC}">
 																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="54857.1428571429"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="56571.4285714286"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
 																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																			</PropertyList>
-																			<AudioSourceRef Name="MusicLoop_LAYERS_Stage1_Real2_140RPM_4-4" ID="{539F525A-EE95-41C6-9AEB-CBE87061DAD2}"/>
+																			<AudioSourceRef Name="MusicFinal_LAYERS_Stage1_Real_140RPM_4-4" ID="{94954DB4-27CD-4E8B-BF6A-28EDC7F6CE55}"/>
 																		</MusicClip>
 																	</Local>
 																</Reference>
@@ -135,13 +135,13 @@
 															<ObjectList Name="Clips">
 																<Reference>
 																	<Local>
-																		<MusicClip Name="MusicLoop_Layers_Stage1_Spiritual_140RPM_4-4" ID="{C92707CA-D04F-438C-8063-59A5E1000413}">
+																		<MusicClip Name="MusicFinal_Layers_Stage1_Spiritual_140RPM_4-4" ID="{B10384BE-4090-43CD-8D6F-3F6E01C0A23C}">
 																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="54857.1428571429"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="68571.4285714286"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
 																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																			</PropertyList>
-																			<AudioSourceRef Name="MusicLoop_Layers_Stage1_Spiritual_140RPM_4-4" ID="{E1C76D86-7B17-41A7-BFE5-E8D0A57CC291}"/>
+																			<AudioSourceRef Name="MusicFinal_Layers_Stage1_Spiritual_140RPM_4-4" ID="{2BCC284A-32D8-4D0B-8542-DADA54F33D94}"/>
 																		</MusicClip>
 																	</Local>
 																</Reference>
@@ -258,6 +258,7 @@
 							<ChildrenList>
 								<MusicTrack Name="mx_menu_120_4-4" ID="{767E0CDC-F4FC-4F97-AB7E-A31E855AC1FD}" ShortID="568267460">
 									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="3"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-3</Value>
@@ -265,8 +266,14 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="on" ID="{BEF5F86D-32D2-47F7-9A7B-398E3472A0AE}" WorkUnitID="{40B0C0DA-4566-415A-94BD-4FD7ABB93AD4}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5F51A88-EEDF-46E1-992F-056E0BD90387}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="menu" ID="{8134CB67-8246-4A80-81CD-2C8316BDA69C}" WorkUnitID="{40B0C0DA-4566-415A-94BD-4FD7ABB93AD4}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -283,6 +290,25 @@
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{B15F1B49-4AB1-4CA0-8D24-CC6B894914C1}">
+													<PropertyList>
+														<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+														<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+													</PropertyList>
+													<TransitionInfo>
+														<SourceFadeOut>
+															<MusicFade Name="Source Fade-out" ID="{FEF328A8-A4B3-4D54-AD52-25689741922E}">
+																<PropertyList>
+																	<Property Name="FadeOffset" Type="Real64" Value="1"/>
+																	<Property Name="FadeTime" Type="Real64" Value="1"/>
+																	<Property Name="FadeType" Type="int16" Value="1"/>
+																</PropertyList>
+															</MusicFade>
+														</SourceFadeOut>
+													</TransitionInfo>
+												</MusicTransition>
+											</ChildrenList>
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>
@@ -306,6 +332,23 @@
 																</Reference>
 															</ObjectList>
 														</ObjectLists>
+														<ReferenceList>
+															<Reference Name="TrackSequenceSwitch">
+																<ObjectRef Name="on" ID="{BEF5F86D-32D2-47F7-9A7B-398E3472A0AE}" WorkUnitID="{40B0C0DA-4566-415A-94BD-4FD7ABB93AD4}"/>
+															</Reference>
+														</ReferenceList>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{F643F670-B75F-4056-B248-6B04D28BC915}">
+														<ObjectLists/>
+														<ReferenceList>
+															<Reference Name="TrackSequenceSwitch">
+																<ObjectRef Name="off" ID="{61241C21-4E25-4C04-92B1-30B0E678BB33}" WorkUnitID="{40B0C0DA-4566-415A-94BD-4FD7ABB93AD4}"/>
+															</Reference>
+														</ReferenceList>
 													</MusicTrackSequence>
 												</Local>
 											</Reference>
@@ -351,7 +394,7 @@
 					<Playlist>
 						<MusicPlaylistItem Name="" ID="{8A89B9DC-C0C7-470E-891D-080D361B779C}" ShortID="148109947">
 							<PropertyList>
-								<Property Name="LoopCount" Type="int16" Value="2"/>
+								<Property Name="LoopCount" Type="int16" Value="0"/>
 							</PropertyList>
 							<ChildrenList>
 								<MusicPlaylistItem Name="" ID="{BDD81AAE-0E57-4B93-B51B-790160C325C7}" ShortID="803837814">

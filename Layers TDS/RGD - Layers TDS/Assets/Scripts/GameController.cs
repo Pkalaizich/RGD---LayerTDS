@@ -37,7 +37,7 @@ public class GameController : MonoBehaviour
     public void gameOver (string text)
     {
         AkSoundEngine.PostEvent("dead_character", gameObject);
-        AkSoundEngine.PostEvent("menu", gameObject);
+        AkSoundEngine.SetState("menu", "on");
         healthCanvas.SetActive(false);
         gameStart = false;
         gameOverCanvas.SetActive(true);
