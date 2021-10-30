@@ -41,6 +41,8 @@ public class CameraController : MonoBehaviour
                     aux.a = newAlpha;
                     Player.GetComponent<SpriteRenderer>().color = aux;
                     //dot.SetActive(false);
+                    AkSoundEngine.PostEvent("switch_layers", gameObject);
+                    AkSoundEngine.SetState("layers", "espiritual");
                 }
                 else
                 {
@@ -55,6 +57,8 @@ public class CameraController : MonoBehaviour
                     aux.a = 1;
                     Player.GetComponent<SpriteRenderer>().color = aux;
                     //dot.SetActive(true);
+                    AkSoundEngine.PostEvent("switch_layers", gameObject);
+                    AkSoundEngine.SetState("layers", "real");
                 }
                 normalCamera = !normalCamera;
                 ControllerMovement.Instance.normalPlane = !ControllerMovement.Instance.normalPlane;

@@ -1,9 +1,26 @@
 Event	ID	Name			Wwise Object Path	Notes
+	345558970	dead_enemy			\Default Work Unit\dead_enemy	
+	388914551	dead_character			\Default Work Unit\dead_character	
+	1685527054	mx			\Default Work Unit\mx	
+	2607556080	menu			\Default Work Unit\menu	
 	3067999715	disparo			\Default Work Unit\disparo	
+	3619719254	switch_layers			\Default Work Unit\switch_layers	
 	4206405159	impacto_disparo			\Default Work Unit\impacto_disparo	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	51421165	laser	E:\RGD---LayerTDS\Layers TDS\RGD - Layers TDS\RGD - Layers TDS_WwiseProject\.cache\Mac\SFX\laser_DCEA4377.wem		\Actor-Mixer Hierarchy\Default Work Unit\disparo\laser		92700
-	414833137	PistolGliss	E:\RGD---LayerTDS\Layers TDS\RGD - Layers TDS\RGD - Layers TDS_WwiseProject\.cache\Mac\SFX\PistolGliss_84B2D2EA.wem		\Actor-Mixer Hierarchy\Default Work Unit\disparo\PistolGliss		59764
+	51421165	laser	E:\RGD---LayerTDS\Layers TDS\RGD - Layers TDS\RGD - Layers TDS_WwiseProject\.cache\Mac\SFX\laser_86C4A450.wem		\Actor-Mixer Hierarchy\Default Work Unit\disparo\laser		92700
+	102217451	dead_enemy2	E:\RGD---LayerTDS\Layers TDS\RGD - Layers TDS\RGD - Layers TDS_WwiseProject\.cache\Mac\SFX\dead_enemy2_D91AB16A.wem		\Actor-Mixer Hierarchy\Default Work Unit\dead_enemy\dead_enemy2		159900
+	166206874	dead_enemy	E:\RGD---LayerTDS\Layers TDS\RGD - Layers TDS\RGD - Layers TDS_WwiseProject\.cache\Mac\SFX\dead_enemy_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\dead_enemy\dead_enemy		419704
+	253897020	Layer2	E:\RGD---LayerTDS\Layers TDS\RGD - Layers TDS\RGD - Layers TDS_WwiseProject\.cache\Mac\SFX\Layer2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\layer_switch\Layer2		1316636
+	414833137	PistolGliss	E:\RGD---LayerTDS\Layers TDS\RGD - Layers TDS\RGD - Layers TDS_WwiseProject\.cache\Mac\SFX\PistolGliss_2CBE4E95.wem		\Actor-Mixer Hierarchy\Default Work Unit\disparo\PistolGliss		59764
+	453752994	cha_dead3	E:\RGD---LayerTDS\Layers TDS\RGD - Layers TDS\RGD - Layers TDS_WwiseProject\.cache\Mac\SFX\cha_dead3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\dead_character\cha_dead3		146180
+	479490500	cha_dead4	E:\RGD---LayerTDS\Layers TDS\RGD - Layers TDS\RGD - Layers TDS_WwiseProject\.cache\Mac\SFX\cha_dead4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\dead_character\cha_dead4		179352
 	628527197	laserhit	E:\RGD---LayerTDS\Layers TDS\RGD - Layers TDS\RGD - Layers TDS_WwiseProject\.cache\Mac\SFX\laserhit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\laserhit		195652
+	700358499	Layer1	E:\RGD---LayerTDS\Layers TDS\RGD - Layers TDS\RGD - Layers TDS_WwiseProject\.cache\Mac\SFX\Layer1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\layer_switch\Layer1		1316636
+	757393192	cha_dead2	E:\RGD---LayerTDS\Layers TDS\RGD - Layers TDS\RGD - Layers TDS_WwiseProject\.cache\Mac\SFX\cha_dead2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\dead_character\cha_dead2		123532
+	828361230	mx_layers	E:\RGD---LayerTDS\Layers TDS\RGD - Layers TDS\RGD - Layers TDS_WwiseProject\.cache\Mac\SFX\MusicLoop_LAYERS_Stage1_Real2_140RPM_4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\mx\mx_layers\mx_layers		9676864
+	886066713	mx_layers	E:\RGD---LayerTDS\Layers TDS\RGD - Layers TDS\RGD - Layers TDS_WwiseProject\.cache\Mac\SFX\MusicLoop_Layers_Stage1_Spiritual_140RPM_4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\mx\mx_layers\mx_layers		9676864
+	1024332111	mx_menu_120_4-4	E:\RGD---LayerTDS\Layers TDS\RGD - Layers TDS\RGD - Layers TDS_WwiseProject\.cache\Mac\SFX\mx_menu_120_4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\menu\menu\mx_menu_120_4-4		3456064
+	1039347702	game_over	E:\RGD---LayerTDS\Layers TDS\RGD - Layers TDS\RGD - Layers TDS_WwiseProject\.cache\Mac\SFX\game_over_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\game_over		1316636
+	1058623172	cha_dead1	E:\RGD---LayerTDS\Layers TDS\RGD - Layers TDS\RGD - Layers TDS_WwiseProject\.cache\Mac\SFX\cha_dead1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\dead_character\cha_dead1		129088
 

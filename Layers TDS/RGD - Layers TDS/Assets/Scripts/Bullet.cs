@@ -11,6 +11,7 @@ public class Bullet : MonoBehaviour
     {
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
         //source.PlayOneShot(hittingSound);
+        AkSoundEngine.PostEvent("impacto_disparo", gameObject);
         Destroy(effect, 2f);
         Destroy(gameObject);
         Life life = collision.gameObject.GetComponent<Life>();

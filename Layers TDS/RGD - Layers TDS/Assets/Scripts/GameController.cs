@@ -31,10 +31,13 @@ public class GameController : MonoBehaviour
         MenuCanvas.SetActive(false);
         healthCanvas.SetActive(true);
         gameStart = true;
+        AkSoundEngine.PostEvent("mx", gameObject);
     }
 
     public void gameOver (string text)
     {
+        AkSoundEngine.PostEvent("dead_character", gameObject);
+        AkSoundEngine.PostEvent("menu", gameObject);
         healthCanvas.SetActive(false);
         gameStart = false;
         gameOverCanvas.SetActive(true);

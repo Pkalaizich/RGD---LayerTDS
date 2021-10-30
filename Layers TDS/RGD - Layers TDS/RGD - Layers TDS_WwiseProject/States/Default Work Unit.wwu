@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{40B0C0DA-4566-415A-94BD-4FD7ABB93AD4}" SchemaVersion="103">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{40B0C0DA-4566-415A-94BD-4FD7ABB93AD4}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{40B0C0DA-4566-415A-94BD-4FD7ABB93AD4}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="layers" ID="{37DA44CC-A3FC-424D-9A04-193E8CD116A1}">
+					<ChildrenList>
+						<State Name="None" ID="{E1173B18-2755-4C36-9FC7-B44B9E30E36D}"/>
+						<State Name="real" ID="{3051B34A-91FF-4CD4-B401-90503E9A73C8}"/>
+						<State Name="espiritual" ID="{7799AA57-AAC6-4A0B-AAAE-FC28159D5D94}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

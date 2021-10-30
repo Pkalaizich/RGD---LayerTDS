@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D405B3B5-6B5B-40C0-9BE4-299C6ED42646}" SchemaVersion="103">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{D405B3B5-6B5B-40C0-9BE4-299C6ED42646}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D405B3B5-6B5B-40C0-9BE4-299C6ED42646}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{035C97EB-738E-49A0-A653-DCA32F87B37F}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="dead_character" ID="{3035D557-2931-4540-A98B-069EA93EDD63}" WorkUnitID="{13AE9692-9A13-4B56-ABBB-26931736E571}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="mx" ID="{B91A55BB-4C58-46A9-B995-9FA81041B8A0}" WorkUnitID="{13AE9692-9A13-4B56-ABBB-26931736E571}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="dead_enemy" ID="{3D7E17AC-1EF1-4196-85EA-B4508BC2D93D}" WorkUnitID="{13AE9692-9A13-4B56-ABBB-26931736E571}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="switch_layers" ID="{D2B71D03-6EE1-4D5B-8268-36B807901169}" WorkUnitID="{13AE9692-9A13-4B56-ABBB-26931736E571}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="disparo" ID="{105B52CF-20FC-4AC6-8881-1336BA962570}" WorkUnitID="{13AE9692-9A13-4B56-ABBB-26931736E571}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="impacto_disparo" ID="{E05839D5-45E8-4915-8575-9A53A3842041}" WorkUnitID="{13AE9692-9A13-4B56-ABBB-26931736E571}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="real" ID="{3051B34A-91FF-4CD4-B401-90503E9A73C8}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="real" ID="{61CA6E9A-04FA-4D38-99B5-1697549CC844}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

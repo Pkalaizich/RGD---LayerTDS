@@ -5,8 +5,13 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{D0F9F42D-5CFF-4418-A33F-70A79DAEEF63}">
 					<ObjectInclusionList>
+						<ObjectRef Name="dead_enemy" ID="{3D7E17AC-1EF1-4196-85EA-B4508BC2D93D}" WorkUnitID="{13AE9692-9A13-4B56-ABBB-26931736E571}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="dead_character" ID="{3035D557-2931-4540-A98B-069EA93EDD63}" WorkUnitID="{13AE9692-9A13-4B56-ABBB-26931736E571}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="mx" ID="{B91A55BB-4C58-46A9-B995-9FA81041B8A0}" WorkUnitID="{13AE9692-9A13-4B56-ABBB-26931736E571}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="menu" ID="{C856A201-3B77-471A-A0AD-2249581CDEB3}" WorkUnitID="{13AE9692-9A13-4B56-ABBB-26931736E571}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="impacto_disparo" ID="{E05839D5-45E8-4915-8575-9A53A3842041}" WorkUnitID="{13AE9692-9A13-4B56-ABBB-26931736E571}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="disparo" ID="{105B52CF-20FC-4AC6-8881-1336BA962570}" WorkUnitID="{13AE9692-9A13-4B56-ABBB-26931736E571}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="switch_layers" ID="{D2B71D03-6EE1-4D5B-8268-36B807901169}" WorkUnitID="{13AE9692-9A13-4B56-ABBB-26931736E571}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

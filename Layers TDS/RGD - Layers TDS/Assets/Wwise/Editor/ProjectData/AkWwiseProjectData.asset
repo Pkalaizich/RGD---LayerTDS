@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 4134181b7804e84e903525308319f42b
     GuidInternal: 
-    m_lastTime: -8585672984803668275
+    m_lastTime: -8585673507584456048
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 881af5b5dfeee146992f056e0bd90387
     GuidInternal: 
-    m_lastTime: -8585672984803758035
+    m_lastTime: -8585660089163163789
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 9ece82052aa5b14a95a064d280e499c9
     GuidInternal: 
-    m_lastTime: -8585672984803678234
+    m_lastTime: -8585660079419020756
     List:
     - name: Main
       guid: 2df4f9d0ff5c1844a33f70a79daeef63
@@ -94,8 +94,42 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 9296ae13139a564babbb26931736e571
     GuidInternal: 
-    m_lastTime: -8585672984803827849
+    m_lastTime: -8585660076851701360
     List:
+    - name: dead_character
+      guid: 57d5353031294045a98b069ea93edd63
+      id: 388914551
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9296ae13139a564babbb26931736e571
+      - ElementName: dead_character
+        ObjectType: 3
+        guid: 57d5353031294045a98b069ea93edd63
+      Path: Events\Default Work Unit\dead_character
+      maxAttenuation: 0
+      maxDuration: 6.857146
+      minDuration: 6.857146
+    - name: dead_enemy
+      guid: ac177e3df11e964185eab4508bc2d93d
+      id: 345558970
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9296ae13139a564babbb26931736e571
+      - ElementName: dead_enemy
+        ObjectType: 3
+        guid: ac177e3df11e964185eab4508bc2d93d
+      Path: Events\Default Work Unit\dead_enemy
+      maxAttenuation: 0
+      maxDuration: 2.315589
+      minDuration: 2.062955
     - name: disparo
       guid: cf525b10fc20c64a88811336ba962570
       id: 3067999715
@@ -130,6 +164,57 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.480038
       minDuration: 0.830643
+    - name: menu
+      guid: 01a256c8773b1a47a0ad2249581cdeb3
+      id: 2607556080
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9296ae13139a564babbb26931736e571
+      - ElementName: menu
+        ObjectType: 3
+        guid: 01a256c8773b1a47a0ad2249581cdeb3
+      Path: Events\Default Work Unit\menu
+      maxAttenuation: 0
+      maxDuration: 36
+      minDuration: 36
+    - name: mx
+      guid: bb551ab9584ca946b9959fa81041b8a0
+      id: 1685527054
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9296ae13139a564babbb26931736e571
+      - ElementName: mx
+        ObjectType: 3
+        guid: bb551ab9584ca946b9959fa81041b8a0
+      Path: Events\Default Work Unit\mx
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: switch_layers
+      guid: 031db7d2e16e5b4d826836b807901169
+      id: 3619719254
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9296ae13139a564babbb26931736e571
+      - ElementName: switch_layers
+        ObjectType: 3
+        guid: 031db7d2e16e5b4d826836b807901169
+      Path: Events\Default Work Unit\switch_layers
+      maxAttenuation: 0
+      maxDuration: 6.857146
+      minDuration: 6.857146
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -142,7 +227,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 16ad7deff3530748af4ad8ba1c85c187
     GuidInternal: 
-    m_lastTime: -8585672984803827849
+    m_lastTime: -8585673507585136246
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -156,8 +241,74 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: dac0b04066455a4194bd4fd7abb93ad4
     GuidInternal: 
-    m_lastTime: -8585672984803678234
-    List: []
+    m_lastTime: -8585660091314679146
+    List:
+    - name: layers
+      guid: cc44da37fca34d429a04193e8cd116a1
+      id: 3298531235
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: dac0b04066455a4194bd4fd7abb93ad4
+      - ElementName: layers
+        ObjectType: 9
+        guid: cc44da37fca34d429a04193e8cd116a1
+      Path: States\Default Work Unit\layers
+      values:
+      - name: espiritual
+        guid: 57aa9977c6aa0b4aaaaefc28159d5d94
+        id: 2983654257
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: dac0b04066455a4194bd4fd7abb93ad4
+        - ElementName: layers
+          ObjectType: 9
+          guid: cc44da37fca34d429a04193e8cd116a1
+        - ElementName: espiritual
+          ObjectType: 8
+          guid: 57aa9977c6aa0b4aaaaefc28159d5d94
+      - name: None
+        guid: 183b17e15527364c9fc7b44b9e30e36d
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: dac0b04066455a4194bd4fd7abb93ad4
+        - ElementName: layers
+          ObjectType: 9
+          guid: cc44da37fca34d429a04193e8cd116a1
+        - ElementName: None
+          ObjectType: 8
+          guid: 183b17e15527364c9fc7b44b9e30e36d
+      - name: real
+        guid: 4ab35130ff91d44cb40190503e9a73c8
+        id: 2579596249
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: dac0b04066455a4194bd4fd7abb93ad4
+        - ElementName: layers
+          ObjectType: 9
+          guid: cc44da37fca34d429a04193e8cd116a1
+        - ElementName: real
+          ObjectType: 8
+          guid: 4ab35130ff91d44cb40190503e9a73c8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -170,8 +321,58 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 3213db58e2e37c4a8239d5cc5be2acec
     GuidInternal: 
-    m_lastTime: -8585672984803668275
-    List: []
+    m_lastTime: -8585660094980847712
+    List:
+    - name: layers
+      guid: 78a6bfd4cb7c6f47ab893c1b0b07336b
+      id: 3298531235
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3213db58e2e37c4a8239d5cc5be2acec
+      - ElementName: layers
+        ObjectType: 11
+        guid: 78a6bfd4cb7c6f47ab893c1b0b07336b
+      Path: Switches\Default Work Unit\layers
+      values:
+      - name: espiritual
+        guid: 6189bf74fc042246b01c29e2baeab924
+        id: 2983654257
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 3213db58e2e37c4a8239d5cc5be2acec
+        - ElementName: layers
+          ObjectType: 11
+          guid: 78a6bfd4cb7c6f47ab893c1b0b07336b
+        - ElementName: espiritual
+          ObjectType: 10
+          guid: 6189bf74fc042246b01c29e2baeab924
+      - name: real
+        guid: 9a6eca61fa04384d99b51697549cc844
+        id: 2579596249
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 3213db58e2e37c4a8239d5cc5be2acec
+        - ElementName: layers
+          ObjectType: 11
+          guid: 78a6bfd4cb7c6f47ab893c1b0b07336b
+        - ElementName: real
+          ObjectType: 10
+          guid: 9a6eca61fa04384d99b51697549cc844
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -184,10 +385,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 649e5ee76656954dbdb1534354d63e26
     GuidInternal: 
-    m_lastTime: -8585672984803668275
+    m_lastTime: -8585673507585676298
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -19,6 +19,7 @@ public class Life : MonoBehaviour
         if (life<=0)
         {
             this.gameObject.SetActive(false);
+            AkSoundEngine.PostEvent("dead_enemy", gameObject);
             if (this.gameObject.tag =="Player")
             {
                 GameController.Instance.gameOver("Perdiste");                 

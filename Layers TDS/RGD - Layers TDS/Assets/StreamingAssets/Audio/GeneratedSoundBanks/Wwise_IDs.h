@@ -13,9 +13,45 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID DEAD_CHARACTER = 388914551U;
+        static const AkUniqueID DEAD_ENEMY = 345558970U;
         static const AkUniqueID DISPARO = 3067999715U;
         static const AkUniqueID IMPACTO_DISPARO = 4206405159U;
+        static const AkUniqueID MENU = 2607556080U;
+        static const AkUniqueID MX = 1685527054U;
+        static const AkUniqueID SWITCH_LAYERS = 3619719254U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace LAYERS
+        {
+            static const AkUniqueID GROUP = 3298531235U;
+
+            namespace STATE
+            {
+                static const AkUniqueID ESPIRITUAL = 2983654257U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID REAL = 2579596249U;
+            } // namespace STATE
+        } // namespace LAYERS
+
+    } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace LAYERS
+        {
+            static const AkUniqueID GROUP = 3298531235U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID ESPIRITUAL = 2983654257U;
+                static const AkUniqueID REAL = 2579596249U;
+            } // namespace SWITCH
+        } // namespace LAYERS
+
+    } // namespace SWITCHES
 
     namespace BANKS
     {

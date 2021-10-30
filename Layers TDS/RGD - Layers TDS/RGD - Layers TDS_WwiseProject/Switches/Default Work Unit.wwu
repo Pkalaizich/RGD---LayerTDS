@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{58DB1332-E3E2-4A7C-8239-D5CC5BE2ACEC}" SchemaVersion="103">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{58DB1332-E3E2-4A7C-8239-D5CC5BE2ACEC}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{58DB1332-E3E2-4A7C-8239-D5CC5BE2ACEC}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="layers" ID="{D4BFA678-7CCB-476F-AB89-3C1B0B07336B}">
+					<ChildrenList>
+						<Switch Name="real" ID="{61CA6E9A-04FA-4D38-99B5-1697549CC844}"/>
+						<Switch Name="espiritual" ID="{74BF8961-04FC-4622-B01C-29E2BAEAB924}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

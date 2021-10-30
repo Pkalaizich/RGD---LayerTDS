@@ -11,25 +11,61 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
+		<SoundBank Id="1355168291" Language="SFX" Hash="836854720">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1338081667">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3420651463">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="388914551" Name="dead_character" ObjectPath="\Events\Default Work Unit\dead_character" DurationType="OneShot" DurationMin="6.857146" DurationMax="6.857146">
+					<IncludedMemoryFiles>
+						<File Id="453752994" Language="SFX">
+							<ShortName>cha_dead3.wav</ShortName>
+							<Path>SFX\cha_dead3_10C4C929.wem</Path>
+						</File>
+						<File Id="479490500" Language="SFX">
+							<ShortName>cha_dead4.wav</ShortName>
+							<Path>SFX\cha_dead4_10C4C929.wem</Path>
+						</File>
+						<File Id="757393192" Language="SFX">
+							<ShortName>cha_dead2.wav</ShortName>
+							<Path>SFX\cha_dead2_10C4C929.wem</Path>
+						</File>
+						<File Id="1039347702" Language="SFX">
+							<ShortName>game_over.wav</ShortName>
+							<Path>SFX\game_over_10C4C929.wem</Path>
+						</File>
+						<File Id="1058623172" Language="SFX">
+							<ShortName>cha_dead1.wav</ShortName>
+							<Path>SFX\cha_dead1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="345558970" Name="dead_enemy" ObjectPath="\Events\Default Work Unit\dead_enemy" DurationType="OneShot" DurationMin="2.062955" DurationMax="2.315589">
+					<IncludedMemoryFiles>
+						<File Id="102217451" Language="SFX">
+							<ShortName>dead_enemy2.wav</ShortName>
+							<Path>SFX\dead_enemy2_D91AB16A.wem</Path>
+						</File>
+						<File Id="166206874" Language="SFX">
+							<ShortName>dead_enemy.wav</ShortName>
+							<Path>SFX\dead_enemy_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3067999715" Name="disparo" ObjectPath="\Events\Default Work Unit\disparo" DurationType="OneShot" DurationMin="0.393414" DurationMax="0.700984">
 					<IncludedMemoryFiles>
 						<File Id="51421165" Language="SFX">
 							<ShortName>laser.wav</ShortName>
-							<Path>SFX\laser_DCEA4377.wem</Path>
+							<Path>SFX\laser_86C4A450.wem</Path>
 						</File>
 						<File Id="414833137" Language="SFX">
 							<ShortName>PistolGliss.wav</ShortName>
-							<Path>SFX\PistolGliss_84B2D2EA.wem</Path>
+							<Path>SFX\PistolGliss_2CBE4E95.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -41,7 +77,54 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2607556080" Name="menu" ObjectPath="\Events\Default Work Unit\menu" DurationType="OneShot" DurationMin="36.000000" DurationMax="36.000000">
+					<IncludedMemoryFiles>
+						<File Id="1024332111" Language="SFX">
+							<ShortName>mx_menu_120_4-4.wav</ShortName>
+							<Path>SFX\mx_menu_120_4-4_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1685527054" Name="mx" ObjectPath="\Events\Default Work Unit\mx" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="828361230" Language="SFX">
+							<ShortName>MusicLoop_LAYERS_Stage1_Real2_140RPM_4-4.wav</ShortName>
+							<Path>SFX\MusicLoop_LAYERS_Stage1_Real2_140RPM_4-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="886066713" Language="SFX">
+							<ShortName>MusicLoop_Layers_Stage1_Spiritual_140RPM_4-4.wav</ShortName>
+							<Path>SFX\MusicLoop_Layers_Stage1_Spiritual_140RPM_4-4_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<ActionSetState>
+						<ActionSetStateEntry Id="2579596249" Name="real" ObjectPath="\States\Default Work Unit\layers\real"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3619719254" Name="switch_layers" ObjectPath="\Events\Default Work Unit\switch_layers" DurationType="OneShot" DurationMin="6.857146" DurationMax="6.857146">
+					<IncludedMemoryFiles>
+						<File Id="253897020" Language="SFX">
+							<ShortName>Layer2.wav</ShortName>
+							<Path>SFX\Layer2_10C4C929.wem</Path>
+						</File>
+						<File Id="700358499" Language="SFX">
+							<ShortName>Layer1.wav</ShortName>
+							<Path>SFX\Layer1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="2579596249" Name="real" ObjectPath="\States\Default Work Unit\layers\real" GUID="{3051B34A-91FF-4CD4-B401-90503E9A73C8}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3298531235" Name="layers" ObjectPath="\States\Default Work Unit\layers" GUID="{37DA44CC-A3FC-424D-9A04-193E8CD116A1}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\layers\None" GUID="{E1173B18-2755-4C36-9FC7-B44B9E30E36D}"/>
+						<State Id="2579596249" Name="real" ObjectPath="\States\Default Work Unit\layers\real" GUID="{3051B34A-91FF-4CD4-B401-90503E9A73C8}"/>
+						<State Id="2983654257" Name="espiritual" ObjectPath="\States\Default Work Unit\layers\espiritual" GUID="{7799AA57-AAC6-4A0B-AAAE-FC28159D5D94}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
