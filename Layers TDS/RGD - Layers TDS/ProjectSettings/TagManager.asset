@@ -9,6 +9,7 @@ TagManager:
   - Dummy
   - Ring
   - ShieldTrigger
+  - RingNormal
   layers:
   - Default
   - TransparentFX

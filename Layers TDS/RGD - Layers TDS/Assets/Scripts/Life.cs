@@ -14,6 +14,7 @@ public class Life : MonoBehaviour
         life -= damage;
         if (this.gameObject.tag =="Player")
         {
+            ControllerMovement.Instance.StartCoroutine("changeColour");
             hb.SetHealth();
         }
         if (life<=0)

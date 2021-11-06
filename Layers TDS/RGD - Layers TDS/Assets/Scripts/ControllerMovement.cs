@@ -17,12 +17,16 @@ public class ControllerMovement : MonoBehaviour
     public bool normalPlane = true;
 
     public Camera cam;
+    public SpriteRenderer sr;
+    private Color aux;
     private void Awake()
     {
         if (instance == null)
             instance = this;
         else
             Destroy(this);
+        sr = GetComponent<SpriteRenderer>();
+        aux = sr.color;
     }
 
     void Update()
@@ -52,5 +56,12 @@ public class ControllerMovement : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 0, angle);
         }
     }
-   
+
+    public IEnumerator changeColour()
+    {        
+        sr.color = Color.red;
+        yield return new WaitForSeconds(0.2f);
+        sr.color = aux;
+    }
+
 }
